@@ -4,6 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --color-debug: #ff69b4;
   --color-primary: #81c784;
   --color-accent: #ffd700;
 }

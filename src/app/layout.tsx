@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Lora, Nunito_Sans } from "next/font/google"
 import "./globals.css"
+import Navbar from "./components/Navbar"
 
 const lora = Lora({
   variable: "--font-lora",
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   title: "Freyza Cosmeceuticals Private Limited",
   description: "FREYZA COSMECEUTICALS PRIVATE LIMITED",
   appleWebApp: {
-    title: "Freyza"
-  }
+    title: "Freyza",
+  },
 }
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lora.variable} ${nunitoSans.variable} antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>
