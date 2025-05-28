@@ -1,5 +1,10 @@
 {
   "name": "freyza-web",
+  "description": "Website for FREYZA COSMECEUTICALS PRIVATE LIMITED",
+  "author": {
+    "name": "Harsh Narayan Jha",
+    "email": "harshnj@proton.me"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,11 +19,12 @@
     "next": "15.3.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
