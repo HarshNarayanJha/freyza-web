@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <div className="max-w-7xl px-16 py-12 m-auto">
+    <section className="max-w-7xl px-16 py-12 m-auto">
       <div
         className="rounded-xl p-8 bg-cover bg-center bg-no-repeat w-full h-[32rem] shadow-inner"
         style={{
@@ -29,6 +29,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
