@@ -10,6 +10,8 @@ export default function Hero() {
           src={HeroImage}
           alt="Hero background"
           placeholder="blur"
+          loading="eager"
+          priority={true}
           className="absolute inset-0 w-full h-full object-cover object-center -z-10 brightness-75 group-hover:scale-105 transition-transform"
         />
         <div className="grid grid-cols-1 grid-rows-1 h-full w-full justify-start items-end py-4 relative">
@@ -23,7 +25,7 @@ export default function Hero() {
             <Link href={"/products"}>
               <button
                 type="button"
-                className="bg-green-500 w-min text-nowrap text-white font-semibold px-4 py-2 rounded-md shadow-md cursor-pointer hover:shadow-lg hover:bg-green-600 transition-[shadow_color] duration-300"
+                className="bg-green-600 w-min text-nowrap text-white font-semibold px-4 py-2 rounded-md shadow-md cursor-pointer hover:shadow-lg hover:bg-green-700 transition-[shadow_color] duration-300"
               >
                 Explore Products
               </button>

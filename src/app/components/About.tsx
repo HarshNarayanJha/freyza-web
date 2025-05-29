@@ -12,7 +12,6 @@ export default function About() {
           src={Freyza}
           alt={"Freyza Logo"}
           placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8P5+nHgAGegIribKufQAAAABJRU5ErkJggg=="
           width={256}
           height={256}
           priority={false}

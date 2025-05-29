@@ -42,6 +42,7 @@ export default function Footer() {
               height={28}
               className="text-[initial]"
             />
+            <span className="sr-only">{social.title}</span>
           </Link>
         ))}
       </div>

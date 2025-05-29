@@ -1,8 +1,11 @@
 "use client"
 
 import { Icon } from "@iconify/react"
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+
+import Freyza from "@/../public/Freyza@64px.webp"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,12 +20,11 @@ export default function Navbar() {
     <nav className="w-full h-auto">
       <div className="flex items-center justify-between px-4 md:px-8 py-4 border-b border-neutral-500/25 shadow-sm">
         <Link href="/" className="flex flex-row items-center gap-2 md:gap-4">
-          <img
-            src="/Freyza@1024px.webp"
-            width={50}
-            height={120}
+          <Image
+            src={Freyza}
             alt="Freyza logo"
             className="inline"
+            placeholder="blur"
           />
           <h2 className="font-bold text-lg md:text-xl">
             Freyza Cosmeceuticals
@@ -43,6 +45,7 @@ export default function Navbar() {
             type="button"
           >
             <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
+            <span className="sr-only">Search</span>
           </button>
         </div>
 
@@ -53,6 +56,7 @@ export default function Navbar() {
             type="button"
           >
             <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
+            <span className="sr-only">Search</span>
           </button>
           <button
             className="p-2"
@@ -66,6 +70,9 @@ export default function Navbar() {
                 width={24}
                 height={24}
               />
+              <span className="sr-only">
+                {isMenuOpen ? "Close Menu" : "Open Menu"}
+              </span>
             </div>
           </button>
         </div>
