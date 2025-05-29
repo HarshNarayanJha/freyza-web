@@ -5,8 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
-import Freyza from "@/../public/Freyza@64px.webp"
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -21,10 +19,13 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 md:px-8 py-4 border-b border-neutral-500/25 shadow-sm">
         <Link href="/" className="flex flex-row items-center gap-2 md:gap-4">
           <Image
-            src={Freyza}
+            src={"Freyza@64px.webp"}
             alt="Freyza logo"
             className="inline"
+            width={64}
+            height={64}
             placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAyUlEQVQYV02POwqGMBCEJ77QLhHBShAEGxEfZxA8kifwMPbexAN4AIsg4gvR/CY2/8I2O98OMyQMQ/o8D9d1Hf/z3kAIYeQFhGma0DQNruuCcw4pCiFw3zdIHMcKqOsa0zQhiiJs24a+73FdF0iSJAqoqgq+76PrOrRti6ZpPiBNU2FZFgzDgOd5CIIAwzDgPE+1JMsy4TgOZMiyLDGOo/qc5/kDiqIQjDEVjFKKfd9VQCkuywKS5zl9Hbh0sW1btTmOA+u6Spj9AKJyYBnxqU2bAAAAAElFTkSuQmCC"
           />
           <h2 className="font-bold text-lg md:text-xl">
             Freyza Cosmeceuticals

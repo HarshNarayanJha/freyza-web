@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           width={595}
           height={842}
           placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAD0lEQVR42mNsqGdgYAQRAAwOAgHSpBruAAAAAElFTkSuQmCC"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAsUlEQVQYV2NsaGj4zwAE//+DKQZGRkY4u7q2loERKAGRwQEY169f/9/f3x+sExsAm/APKMOEJPuX4T8DMwNEA2NebeP/5TNnMrx6+RRsN8ikqqoqhpaWFoY/f/4wMH77+/2/vKQyWMHPX78Y2NnYUGwCW2Ht5MLgFODD0JSbj+EWsAJxCRmGly+eQHSCKBmEIWAF954/Y1CSlGJAdhxMCTwcQIGBzaOEAwpkBTC4cYYkAJyPWUCMwSmTAAAAAElFTkSuQmCC"
         />
       </div>
       <div className="p-4">

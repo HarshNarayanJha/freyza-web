@@ -1,4 +1,3 @@
-import Freyza from "@/../public/Freyza-golden.webp"
 import Image from "next/image"
 
 export default function About() {
@@ -9,9 +8,10 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <Image
-          src={Freyza}
+          src={"Freyza-golden.webp"}
           alt={"Freyza Logo"}
           placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAPElEQVQIW2NkIAAYkeW/zlP9z510G0WMNAXYbMMwAaQI2RqwApjdIBqmACYGVvBjjrLKXyam2+gOBMkBADQyHQhaTfCnAAAAAElFTkSuQmCC"
           width={256}
           height={256}
           priority={false}
@@ -20,12 +20,13 @@ export default function About() {
         />
         <div className="flex-1">
           <p className="text-lg leading-relaxed text-gray-700">
-            Freyza Cosmeceuticals is a leading private limited medicine company
-            dedicated to developing and delivering innovative healthcare
-            solutions. Our mission is to improve lives through high-quality,
-            effective pharmaceutical products. We are committed to upholding the
-            highest standards of integrity, quality, and patient care in
-            everything we do.
+            Freyza is dedicated to providing high-quality premium products at
+            affordable prices. Established by a team of experts, our mission is
+            to offer effective solutions that focus on helping patients achieve
+            optimal health and beauty outcomes. By blending cutting-edge science
+            with the finest ingredients, we create products tailored to meet
+            each individual's unique needs. At Freyza, we believe everyone
+            deserves access to exceptional care and visible results.
           </p>
         </div>
       </div>
