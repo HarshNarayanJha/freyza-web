@@ -1,5 +1,6 @@
 "use client"
 
+import { Icon } from "@iconify/react"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -38,20 +39,20 @@ export default function Navbar() {
             ))}
           </ul>
           <button
-            className="rounded-md bg-primary/75 text-center w-10 h-10"
+            className="rounded-md bg-primary/75 text-center w-10 h-10 shadow"
             type="button"
           >
-            S
+            <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
           </button>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center gap-2">
           <button
-            className="rounded-md bg-primary/75 text-center w-10 h-10"
+            className="rounded-md bg-primary/75 text-center w-10 h-10 shadow"
             type="button"
           >
-            S
+            <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
           </button>
           <button
             className="p-2"
@@ -59,15 +60,12 @@ export default function Navbar() {
             type="button"
           >
             <div className="w-6 h-6 flex flex-col justify-center">
-              <span
-                className={`block h-0.5 w-6 bg-current transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-1" : ""}`}
-              ></span>
-              <span
-                className={`block h-0.5 w-6 bg-current mt-1 transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`}
-              ></span>
-              <span
-                className={`block h-0.5 w-6 bg-current mt-1 transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-1" : ""}`}
-              ></span>
+              <Icon
+                icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
+                className="m-auto"
+                width={24}
+                height={24}
+              />
             </div>
           </button>
         </div>

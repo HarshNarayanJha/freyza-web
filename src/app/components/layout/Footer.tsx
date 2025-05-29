@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -8,24 +9,39 @@ export default function Footer() {
   ]
 
   const socials = [
-    { icon: "facebook", title: "Facebook", url: "#" },
-    { icon: "twitter", title: "X (Twitter)", url: "#" },
-    { icon: "amazon", title: "Amazon", url: "#" },
+    { icon: "logos:facebook", title: "Facebook", url: "#" },
+    { icon: "logos:twitter", title: "X (Twitter)", url: "#" },
+    { icon: "lineicons:amazon-original", title: "Amazon", url: "#" },
   ]
 
   return (
-    <footer className="w-full flex flex-col gap-4 items-center justify-evenly max-w-5xl m-auto py-8 px-8">
+    <footer className="w-full flex flex-col gap-4 items-center justify-evenly max-w-3xl m-auto py-16 px-8">
       <div className="container flex flex-row items-center justify-between gap-4">
         {links.map(link => (
-          <Link key={link.title} href={link.url} className="text-pink-800">
+          <Link
+            key={link.title}
+            href={link.url}
+            className="text-pink-800"
+            target="_blank"
+          >
             {link.title}
           </Link>
         ))}
       </div>
       <div className="container flex flex-row items-center justify-center gap-4">
         {socials.map(social => (
-          <Link key={social.title} href={social.url} className="text-pink-800">
-            {social.title}
+          <Link
+            key={social.title}
+            href={social.url}
+            className="text-pink-800"
+            target="_blank"
+          >
+            <Icon
+              icon={social.icon}
+              width={28}
+              height={28}
+              className="text-[initial]"
+            />
           </Link>
         ))}
       </div>
