@@ -1,0 +1,74 @@
+[
+  {
+    "id": "rev_001",
+    "customerId": "cust_456789",
+    "customerName": "Sarah Chen",
+    "rating": 5,
+    "title": "Amazing Vitamin C Serum!",
+    "comment": "I've been using FREYZA's Vitamin C serum for 3 months now and my skin has never looked better. The dark spots are fading and my complexion is so much brighter. Highly recommend!",
+    "createdAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "rev_002",
+    "customerId": "cust_123456",
+    "customerName": "Priya Sharma",
+    "rating": 4,
+    "title": "Great moisturizer for sensitive skin",
+    "comment": "The FREYZA hyaluronic acid moisturizer is perfect for my sensitive skin. No irritation and keeps my skin hydrated all day. Only wish it came in a larger size!",
+    "createdAt": "2024-01-20T14:45:00Z"
+  },
+  {
+    "id": "rev_003",
+    "customerId": "cust_789012",
+    "customerName": "Ananya Patel",
+    "rating": 5,
+    "title": "Retinol cream works wonders",
+    "comment": "I was hesitant to try retinol but FREYZA's gentle retinol cream has been amazing. Fine lines are reducing and skin texture is improving. No harsh side effects either.",
+    "createdAt": "2024-02-02T09:15:00Z"
+  },
+  {
+    "id": "rev_004",
+    "customerId": "cust_345678",
+    "customerName": "Kavya Reddy",
+    "rating": 3,
+    "title": "Decent cleanser but nothing special",
+    "comment": "The FREYZA foaming cleanser does its job but I don't see any major difference compared to other cleansers. It's gentle and doesn't dry out my skin though.",
+    "createdAt": "2024-02-10T16:20:00Z"
+  },
+  {
+    "id": "rev_005",
+    "customerId": "cust_901234",
+    "customerName": "Meera Iyer",
+    "rating": 5,
+    "title": "Niacinamide serum is a game changer",
+    "comment": "FREYZA's niacinamide serum has completely transformed my oily skin. Pores look smaller, oil production is controlled, and no more breakouts. Will definitely repurchase!",
+    "createdAt": "2024-02-18T11:00:00Z"
+  },
+  {
+    "id": "rev_006",
+    "customerId": "cust_567890",
+    "customerName": "Rhea Gupta",
+    "rating": 4,
+    "title": "Sunscreen with great coverage",
+    "comment": "Love this SPF 50 sunscreen from FREYZA. Doesn't leave white cast and works well under makeup. Protection seems good too. Just wish it was a bit more affordable.",
+    "createdAt": "2024-02-25T13:30:00Z"
+  },
+  {
+    "id": "rev_007",
+    "customerId": "cust_234567",
+    "customerName": "Isha Malhotra",
+    "rating": 2,
+    "title": "Peptide cream didn't work for me",
+    "comment": "I had high hopes for FREYZA's peptide anti-aging cream but after 2 months of use, I don't see any improvement. Also caused some minor breakouts. Might not be suitable for acne-prone skin.",
+    "createdAt": "2024-03-05T15:45:00Z"
+  },
+  {
+    "id": "rev_008",
+    "customerId": "cust_678901",
+    "customerName": "Aditi Kapoor",
+    "rating": 5,
+    "title": "Eye cream that actually works!",
+    "comment": "Finally found an eye cream that reduces my dark circles! FREYZA's caffeine eye cream is lightweight, absorbs quickly, and I can see visible improvement after just 3 weeks.",
+    "createdAt": "2024-03-12T07:20:00Z"
+  }
+]

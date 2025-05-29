@@ -6,7 +6,7 @@ export type ProductCategory =
   | "Cream"
 
 /**
- * Represents a single product from FREYZA Cosmeceuticals.
+ * Represents a single product from Freyza Cosmeceuticals.
  */
 export type Product = {
   /**
