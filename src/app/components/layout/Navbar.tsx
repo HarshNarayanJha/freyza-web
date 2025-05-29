@@ -18,12 +18,12 @@ export default function Navbar() {
             alt="Freyza logo"
             className="inline"
           />
-          <span className="font-bold text-xl">Freyza Cosmeceuticals</span>
+          <h2 className="font-bold text-xl">Freyza Cosmeceuticals</h2>
         </Link>
         <div className="flex flex-row items-center gap-8">
           <ul className="flex flex-row items-center gap-8">
             {navigation.map(item => (
-              <li key={item.path} className="font-semibold">
+              <li key={item.title} className="font-semibold">
                 <Link href={item.path}>{item.title}</Link>
               </li>
             ))}

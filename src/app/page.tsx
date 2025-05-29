@@ -1,3 +1,9 @@
+import Hero from "./components/Hero"
+
 export default function Home() {
-  return <h1>FREYZA COSMECEUTICALS PRIVATE LIMITED</h1>
+  return (
+    <main className="min-h-svh">
+      <Hero />
+    </main>
+  )
 }

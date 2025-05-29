@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import { Lora, Nunito_Sans } from "next/font/google"
 import "./globals.css"
-import Navbar from "./components/Navbar"
+import Footer from "./components/layout/Footer"
+import Navbar from "./components/layout/Navbar"
 
 const lora = Lora({
   variable: "--font-lora",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${lora.variable} ${nunitoSans.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
