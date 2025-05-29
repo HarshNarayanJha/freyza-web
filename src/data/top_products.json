@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hs-533-hair-serum",
+    "name": "HS 533 Hair Serum",
+    "description": "Advanced hair serum formulated to nourish and strengthen hair follicles while promoting healthy hair growth and shine.",
+    "imageUrl": "/hs533.webp",
+    "category": "Serum",
+    "price": 29.99,
+    "ingredients": ["Biotin", "Keratin", "Argan Oil", "Vitamin E", "Panthenol"],
+    "howToUse": "Apply 2-3 drops to clean, damp hair. Massage gently into scalp and hair lengths. Do not rinse. Use daily for best results.",
+    "benefits": ["Promotes hair growth", "Reduces hair breakage", "Adds natural shine", "Strengthens hair follicles"],
+    "warnings": "For external use only. Avoid contact with eyes. Discontinue use if irritation occurs.",
+    "additionalImages": [
+      "https://images.unsplash.com/photo-1522338140262-f46f5913618f?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "id": "nilkilz-shampoo",
+    "name": "Nilkilz Shampoo",
+    "description": "Gentle cleansing shampoo that removes impurities while maintaining natural hair moisture and scalp health.",
+    "imageUrl": "/nilkliz.webp",
+    "category": "Shampoo",
+    "price": 18.5,
+    "ingredients": ["Coconut Oil", "Aloe Vera", "Tea Tree Oil", "Chamomile Extract"],
+    "howToUse": "Wet hair thoroughly. Apply shampoo to scalp and hair, lather gently. Rinse completely with warm water. Repeat if necessary.",
+    "benefits": [
+      "Deep cleansing action",
+      "Maintains scalp health",
+      "Preserves natural moisture",
+      "Suitable for daily use"
+    ],
+    "warnings": "Avoid contact with eyes. If product gets into eyes, rinse thoroughly with water.",
+    "additionalImages": ["https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400&h=400&fit=crop"]
+  },
+  {
+    "id": "frecyy-facewash",
+    "name": "Frecyy Facewash",
+    "description": "Refreshing facial cleanser designed to remove makeup, dirt, and excess oil while leaving skin soft and balanced.",
+    "imageUrl": "/frecyy.webp",
+    "category": "Cream",
+    "price": 24.75,
+    "ingredients": ["Salicylic Acid", "Glycerin", "Niacinamide", "Hyaluronic Acid", "Green Tea Extract"],
+    "howToUse": "Apply to wet face and neck. Massage gently in circular motions for 30 seconds. Rinse thoroughly with lukewarm water. Use morning and evening.",
+    "benefits": [
+      "Removes impurities effectively",
+      "Balances skin pH",
+      "Minimizes pores",
+      "Suitable for all skin types"
+    ],
+    "warnings": "For external use only. Perform patch test before first use. Discontinue if redness or irritation develops.",
+    "additionalImages": [
+      "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "id": "hydrapiel-lotion",
+    "name": "Hydrapiel Lotion",
+    "description": "Intensive moisturizing lotion that provides long-lasting hydration and helps restore skin's natural barrier function.",
+    "imageUrl": "/hydrapiel.webp",
+    "category": "Lotion",
+    "price": 32.0,
+    "ingredients": ["Ceramides", "Shea Butter", "Vitamin B5", "Jojoba Oil", "Collagen Peptides"],
+    "howToUse": "Apply generously to clean skin. Massage in upward circular motions until fully absorbed. Use twice daily or as needed.",
+    "benefits": [
+      "24-hour moisture protection",
+      "Improves skin elasticity",
+      "Non-greasy formula",
+      "Suitable for sensitive skin"
+    ],
+    "warnings": "For external use only. Keep away from children. Store in a cool, dry place.",
+    "additionalImages": ["https://images.unsplash.com/photo-1556228578-dd2e18914ebf?w=400&h=400&fit=crop"]
+  },
+  {
+    "id": "masha-barrier-repair-cream",
+    "name": "Masha Barrier Repair Cream",
+    "description": "Intensive repair cream specially formulated to restore damaged skin barrier and provide deep nourishment for compromised skin.",
+    "imageUrl": "/masha.webp",
+    "category": "Cream",
+    "price": 45.99,
+    "ingredients": ["Peptide Complex", "Retinol", "Centella Asiatica", "Squalane", "Vitamin C"],
+    "howToUse": "Apply thin layer to clean face and neck in the evening. Allow to absorb completely. Start with 2-3 times per week, gradually increase frequency.",
+    "benefits": ["Repairs skin barrier", "Reduces signs of aging", "Improves skin texture", "Calms irritated skin"],
+    "warnings": "Use sunscreen during the day when using this product. May cause initial sensitivity. Pregnant or nursing women should consult physician before use.",
+    "additionalImages": [
+      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400&h=400&fit=crop"
+    ]
+  }
+]

@@ -12,7 +12,7 @@ export default function Hero() {
       >
         <div className="grid grid-cols-1 grid-rows-1 h-full w-full justify-start items-end py-4">
           <div className="flex flex-col gap-6">
-            <h1 className="font-extrabold text-black text-5xl">
+            <h1 className="font-extrabold text-black text-3xl md:text-5xl">
               Freyza Cosmeceuticals
             </h1>
             <p className="font-medium mb-2.5">

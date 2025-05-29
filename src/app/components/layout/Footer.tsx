@@ -29,7 +29,7 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-      <p className="text-pink-800">
+      <p className="text-pink-800 text-center">
         &copy; 2025 Freyza Cosmeceuticals Private Limited. All rights reserved
       </p>
     </footer>

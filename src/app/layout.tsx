@@ -15,7 +15,7 @@ const nunitoSans = Nunito_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Freyza Cosmeceuticals Private Limited",
+  title: "Freyza Cosmeceuticals",
   description: "FREYZA COSMECEUTICALS PRIVATE LIMITED",
   appleWebApp: {
     title: "Freyza",
