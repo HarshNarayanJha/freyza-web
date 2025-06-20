@@ -1,13 +1,14 @@
 import { Icon } from "@iconify/react"
+import type { CustomerReview } from "@/lib/types/review"
 
 export default function ReviewCard({ review }: { review: CustomerReview }) {
   return (
-    <div className="flex-none w-80 bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-      <div className="flex items-center mb-4">
+    <div className="flex w-80 flex-none flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+      <div className="mb-4 flex items-center">
         <div className="flex">
           {[...Array(5)].map((_, i) => (
             <Icon
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+              // biome-ignore lint/suspicious/noArrayIndexKey: TODO: will replace
               key={i}
               icon="mdi:star"
               className={
@@ -20,8 +21,9 @@ export default function ReviewCard({ review }: { review: CustomerReview }) {
         </div>
         <span className="ml-2 text-sm text-gray-600">({review.rating}/5)</span>
       </div>
-      <h3 className="font-semibold text-lg mb-2">{review.title}</h3>
-      <p className="text-gray-600 mb-4">{review.comment}</p>
+      <h3 className="mb-2 text-lg font-semibold">{review.title}</h3>
+      <p className="mb-4 text-gray-600">{review.comment}</p>
+      <span className="flex-1"></span>
       <div className="text-sm text-gray-500">
         <p className="font-medium">{review.customerName}</p>
         <p>{new Date(review.createdAt).toLocaleDateString()}</p>

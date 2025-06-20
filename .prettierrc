@@ -1,0 +1,6 @@
+{
+  "tailwindStylesheet": "src/app/globals.css",
+  "semi": false,
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}

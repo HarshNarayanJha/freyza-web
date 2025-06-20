@@ -1,4 +1,4 @@
-type CustomerReview = {
+export type CustomerReview = {
   id: string
   customerId: string
   customerName: string

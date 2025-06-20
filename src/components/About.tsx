@@ -2,11 +2,11 @@ import Image from "next/image"
 
 export default function About() {
   return (
-    <section className="max-w-7xl px-16 py-12 m-auto">
+    <section className="m-auto max-w-7xl px-16 py-12">
       <div className="my-4">
-        <h2 className="font-bold text-2xl">About Freyza</h2>
+        <h2 className="text-2xl font-bold">About Freyza</h2>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-8">
+      <div className="flex flex-col items-center gap-8 md:flex-row">
         <Image
           src={"Freyza-golden.webp"}
           alt={"Freyza Logo"}

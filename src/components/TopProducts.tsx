@@ -5,6 +5,7 @@ import SeeAllCard from "./reusable/SeeAllCard"
 
 export default function TopProducts() {
   const products: Product[] = topProducts as Product[]
+
   return (
     <section className="max-w-7xl px-16 py-4 m-auto">
       <div className="my-4">

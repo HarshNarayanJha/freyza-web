@@ -3,8 +3,8 @@ import Link from "next/link"
 
 export default function Footer() {
   const links = [
-    { title: "Privacy Policy", url: "#" },
-    { title: "Terms of Service", url: "#" },
+    { title: "Safety Information", url: "/safety" },
+    { title: "Clinical Studies", url: "/clinical-studies" },
     { title: "Contact Us", url: "/contact" },
   ]
 
@@ -15,13 +15,13 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="w-full flex flex-col gap-4 items-center justify-evenly max-w-3xl m-auto py-16 px-8">
-      <div className="container flex flex-row items-center justify-between gap-4">
+    <footer className="m-auto flex w-full max-w-3xl flex-col items-center justify-evenly gap-6 px-8 py-16">
+      <div className="grid w-full grid-cols-3 content-center items-center gap-4">
         {links.map(link => (
           <Link
             key={link.title}
             href={link.url}
-            className="text-pink-800"
+            className="text-center text-pink-800"
             target="_blank"
           >
             {link.title}
@@ -46,8 +46,18 @@ export default function Footer() {
           </Link>
         ))}
       </div>
-      <p className="text-pink-800 text-center">
+      <p className="text-center text-pink-800">
         &copy; 2025 Freyza Cosmeceuticals Private Limited. All rights reserved
+      </p>
+      <p className="text-center text-xs">
+        Designed and Made into reality by{" "}
+        <Link
+          href="https://harshnj.is-a.dev"
+          target="_blank"
+          className="text-blue-700"
+        >
+          Harsh Narayan Jha
+        </Link>
       </p>
     </footer>
   )

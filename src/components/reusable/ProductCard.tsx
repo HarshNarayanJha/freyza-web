@@ -1,5 +1,5 @@
-import type { Product } from "@/lib/types/product"
 import Image from "next/image"
+import type { Product } from "@/lib/types/product"
 
 interface ProductCardProps {
   product: Product
@@ -7,12 +7,12 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="flex-shrink-0 w-64 border border-gray-200/50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-200 cursor-pointer group">
+    <div className="group w-64 flex-shrink-0 cursor-pointer overflow-hidden rounded-xl border border-gray-200/50 shadow-sm transition-all duration-200 hover:shadow-lg">
       <div className="relative overflow-hidden">
         <Image
           src={product.imageUrl}
           alt={product.name}
-          className="w-full h-48 object-cover scale-105 group-hover:scale-110 transition-transform duration-200"
+          className="h-48 w-full scale-105 object-cover transition-transform duration-200 group-hover:scale-110"
           width={595}
           height={842}
           placeholder="blur"
@@ -21,14 +21,14 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
       <div className="p-4">
         <div className="mb-2">
-          <span className="inline-block px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full">
+          <span className="inline-block rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-600">
             {product.category}
           </span>
         </div>
-        <h3 className="font-semibold text-lg text-gray-900 mb-2">
+        <h3 className="mb-2 text-lg font-semibold text-gray-900">
           {product.name}
         </h3>
-        <p className="text-sm text-gray-600 line-clamp-2">
+        <p className="line-clamp-2 text-sm text-gray-600">
           {product.description}
         </p>
       </div>

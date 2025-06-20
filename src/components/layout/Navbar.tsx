@@ -15,25 +15,25 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="w-full h-auto">
-      <div className="flex items-center justify-between px-4 md:px-8 py-4 border-b border-neutral-500/25 shadow-sm">
+    <nav className="h-auto w-full">
+      <div className="flex items-center justify-between border-b border-neutral-500/25 px-4 py-4 shadow-sm md:px-8">
         <Link href="/" className="flex flex-row items-center gap-2 md:gap-4">
           <Image
-            src={"Freyza@64px.webp"}
-            alt="Freyza logo"
-            className="inline"
-            width={64}
-            height={64}
+            src={"Freyza.png"}
+            alt="Freyza Logo"
+            className="inline w-12 invert md:w-16"
+            width={48}
+            height={48}
             placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAyUlEQVQYV02POwqGMBCEJ77QLhHBShAEGxEfZxA8kifwMPbexAN4AIsg4gvR/CY2/8I2O98OMyQMQ/o8D9d1Hf/z3kAIYeQFhGma0DQNruuCcw4pCiFw3zdIHMcKqOsa0zQhiiJs24a+73FdF0iSJAqoqgq+76PrOrRti6ZpPiBNU2FZFgzDgOd5CIIAwzDgPE+1JMsy4TgOZMiyLDGOo/qc5/kDiqIQjDEVjFKKfd9VQCkuywKS5zl9Hbh0sW1btTmOA+u6Spj9AKJyYBnxqU2bAAAAAElFTkSuQmCC"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOUrQcAAL8AnkwTEGYAAAAASUVORK5CYII="
           />
-          <h2 className="font-bold text-lg md:text-xl">
+          <h2 className="text-lg font-bold md:text-2xl">
             Freyza Cosmeceuticals
           </h2>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-row items-center gap-8">
+        <div className="hidden flex-row items-center gap-8 md:flex">
           <ul className="flex flex-row items-center gap-8">
             {navigation.map(item => (
               <li key={item.title} className="font-semibold">
@@ -42,7 +42,7 @@ export default function Navbar() {
             ))}
           </ul>
           <button
-            className="rounded-md bg-primary/75 text-center w-10 h-10 shadow"
+            className="h-10 w-10 rounded-md bg-primary/75 text-center shadow"
             type="button"
           >
             <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
@@ -51,9 +51,9 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex items-center gap-2 md:hidden">
           <button
-            className="rounded-md bg-primary/75 text-center w-10 h-10 shadow"
+            className="h-10 w-10 rounded-md bg-primary/75 text-center shadow"
             type="button"
           >
             <Icon icon="mdi:search" className="m-auto" width={24} height={24} />
@@ -64,7 +64,7 @@ export default function Navbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             type="button"
           >
-            <div className="w-6 h-6 flex flex-col justify-center">
+            <div className="flex h-6 w-6 flex-col justify-center">
               <Icon
                 icon={isMenuOpen ? "mdi:close" : "mdi:menu"}
                 className="m-auto"
@@ -81,7 +81,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden border-b border-neutral-500/25 bg-white">
+        <div className="border-b border-neutral-500/25 bg-white md:hidden">
           <ul className="flex flex-col py-4">
             {navigation.map(item => (
               <li key={item.title} className="font-semibold">

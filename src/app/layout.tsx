@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Lora, Nunito_Sans } from "next/font/google"
 import "./globals.css"
-import Footer from "./components/layout/Footer"
-import Navbar from "./components/layout/Navbar"
+import Footer from "@/components/layout/Footer"
+import Navbar from "@/components/layout/Navbar"
 
 const lora = Lora({
   variable: "--font-lora",
@@ -17,6 +17,24 @@ const nunitoSans = Nunito_Sans({
 export const metadata: Metadata = {
   title: "Freyza Cosmeceuticals",
   description: "FREYZA COSMECEUTICALS PRIVATE LIMITED",
+  category: "Cosmetics",
+  authors: [{ name: "Harsh Narayan Jha", url: "https://harshnj.is-a.dev" }],
+  keywords: ["Cosmetics", "Beauty", "Skincare", "Cosmeceuticals"],
+  openGraph: {
+    type: "website",
+    description: "FREYZA COSMECEUTICALS PRIVATE LIMITED",
+    countryName: "IN",
+    siteName: "Freyza Cosmeceuticals",
+    title: "Freyza Cosmeceuticals",
+    images: [
+      {
+        url: "/logo.png",
+        width: 64,
+        height: 64,
+        alt: "Freyza Cosmeceuticals Logo",
+      },
+    ],
+  },
   appleWebApp: {
     title: "Freyza",
   },

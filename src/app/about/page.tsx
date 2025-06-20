@@ -1,5 +1,5 @@
-import About from "@/app/components/About"
 import { Icon } from "@iconify/react"
+import About from "@/components/About"
 
 export default function AboutPage() {
   const points = [
@@ -49,9 +49,9 @@ export default function AboutPage() {
 
   return (
     <section className="py-16">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-gray-800">
             Why Choose Our Products
           </h2>
           <p className="text-lg text-gray-600">
@@ -59,11 +59,11 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {points.map(point => (
             <div
               key={point.name}
-              className="flex flex-col items-center text-center p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+              className="flex flex-col items-center rounded-lg border border-gray-100 p-6 text-center transition-shadow duration-200 hover:shadow-md"
             >
               <div className="mb-4">
                 <Icon
@@ -73,10 +73,10 @@ export default function AboutPage() {
                   height={64}
                 />
               </div>
-              <h3 className="font-semibold text-lg mb-3 text-gray-800">
+              <h3 className="mb-3 text-lg font-semibold text-gray-800">
                 {point.name}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="leading-relaxed text-gray-600">
                 {point.description}
               </p>
             </div>
